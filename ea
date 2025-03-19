@@ -10,10 +10,10 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     ["SilentAim"] = {
         ['Enabled'] = (true),
         ['Toggle'] = ('T'), --[[ For Target Mode ]]
-        ['Field'] = ('Circle'), --[[ Box, Circle ]]
+        ['Field'] = ('Box'), --[[ Box, Circle ]]
         ['Mode'] = ('Automatic'), --[[ Automatic, Target (Disabled) ]]
                                                                                                                  --[[ Must have Automated enabled to use these (prediction formula for offbrands) ]]
-        ['Prediction'] = { ['Enabled'] = (true), ['Ground'] = (0.1214), ['Air'] = (0.118), ['Automated'] = (false), ['Stabilize'] = (4.8), ['YStabilize'] = { ['Enabled'] = (false), ['Value'] = (2) } },
+        ['Prediction'] = { ['Enabled'] = (true), ['Ground'] = (0.126), ['Air'] = (0.126), ['Automated'] = (true), ['Stabilize'] = (4.8), ['YStabilize'] = { ['Enabled'] = (false), ['Value'] = (2) } },
                                                           --[[ Basic, Advanced ]]
         ['Point'] = ('Nearest Point'), ['Scale'] = (0.2), ['Type'] = ('Advanced'), --[[ "Nearest Part", "Nearest Point", "Default" ]]
         ['Parts'] = {'Head'} --[[ https://create.roblox.com/docs/reference/engine/enums/BodyPartR15 ]]
@@ -25,9 +25,9 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Bezier'] = (true), --[[ -- ]]
         ['Sticky'] = (true), --[[ Single Target ]]
 
-        ['Smoothing'] = { ['Enabled'] = (true), ['Ground'] = (0.066), ['Air'] = (0.061) },
+        ['Smoothing'] = { ['Enabled'] = (true), ['Ground'] = (0.099), ['Air'] = (0.099) },
 
-        ['Prediction'] = { ['Enabled'] = (true), ['Ground'] = (0.16), ['Air'] = (0.16) },
+        ['Prediction'] = { ['Enabled'] = (true), ['Ground'] = (0.13), ['Air'] = (0.14) },
                                                             --[[ Basic, Advanced ]]
         ['Point'] = ('Default'), ['Scale'] = (0.2), ['Type'] = ('Basic'), --[[ "Nearest Part", "Nearest Point", "Default" ]]
         ['Parts'] = {'Head'}, --[[ https://create.roblox.com/docs/reference/engine/enums/BodyPartR15 ]]
@@ -44,7 +44,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
         ['Field'] = ('Cursor'), --[[ Cursor, Magnitude ]]
         ['Type'] = ('Toggle'),  --[[ Toggle, Hold ]]
         
-        ['Prediction'] = { ['Enabled'] = (false), ['Ground'] = (0.119), ['Air'] = (0.119), ['Threshold'] = (25) }, --[[ Only Works With Magnitude ]]
+        ['Prediction'] = { ['Enabled'] = (false), ['Ground'] = (0.125), ['Air'] = (0.125), ['Threshold'] = (25) }, --[[ Only Works With Magnitude ]]
     
         ['Interval'] = { ['Enabled'] = (false), ['Weapon'] = { ['[Double-Barrel SG]'] = (1), ['[TacticalShotgun]'] = (1), ['[Revolver]'] = (1) } }, --[[ In MS ]]--
         --[[ Cursor mode doesn't work on offbrands due to hitboxes, use this Magnitude instead ]]
@@ -52,7 +52,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     },
 
     ["Physics"] = {
-        ['Walking'] = { ['Enabled'] = (true), ['Toggle'] = ('V'), ['Amount'] = (5) }, 
+        ['Walking'] = { ['Enabled'] = (true), ['Toggle'] = ('V'), ['Amount'] = (4) }, 
         ['Falling'] = { ['Enabled'] = (false) }, --[[ Anti Fall ]]
         ['Jumping'] = { ['Enabled'] = (true) }, --[[ No Jump Cooldown ]]
         ['Velocity'] = { ['Always On'] = (false), ['Magnitude'] = 150 }
@@ -88,7 +88,7 @@ shared["F​F​l​a​g​A​X​C​o​m​b​i​n​e​G​e​t​O​
     
     ["Fields"] = {
         ['AimAssistField'] = { ['Size'] = (500) },
-        ['SilentAimField'] = { ['Size'] = (30) },
+        ['SilentAimField'] = { ['Size'] = (25) },
         ['TriggerBotField'] = { ['Size'] = (5.5) }, --[[ For offbrands ]]
         ['SilentAimBoxField'] = { ['Visible'] = (false), ['Sync'] = (false), ['Width'] = (8), ['Height'] = (8) }
     },
